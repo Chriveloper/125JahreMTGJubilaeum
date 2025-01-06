@@ -2,7 +2,7 @@
 
 Ein interaktives, Kahoot-inspiriertes Quiz zur Feier des 125-jährigen Jubiläums des Maria-Theresia-Gymnasiums, entwickelt von den Schülern @Chriveloper & @Parrot42.
 
-Über 200 Gäste nahmen live am Quiz teil, der Ablauf war erfolgreich und frei von technischen Problemen.
+Am 31.01.2024 nahmen über 200 Gäste live am Quiz teil, der Ablauf war erfolgreich und frei von technischen Problemen.
 
 ## Übersicht
 
