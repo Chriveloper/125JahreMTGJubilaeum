@@ -367,7 +367,7 @@ userlist = [
 async function phase3() {
     let datenStrom;
     try {
-        await updateRanking();
+        // await updateRanking();
         datenStrom = await supabaseFetch('spieler', 'id, name, punkte, streak, vote, podium', '', '', '', 'punkte', false)
     } catch (error) {
         alert(error.message);
