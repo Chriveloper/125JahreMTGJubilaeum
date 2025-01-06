@@ -9,6 +9,7 @@ Ein interaktives, Kahoot-inspiriertes Quiz zur Feier des 125-jährigen Jubiläum
 Das 125 Jahre MTG Jubiläum Quiz ist eine serverlose, webbasierte Anwendung, die Supabase als Backend-Service nutzt, um eine reibungslose Datenverwaltung und Echtzeit-Updates zu gewährleisten.
 
 ## Für Teilnehmer
+
 - Einfacher Zugang über Browser ohne Installation
 - Beantwortung von Fragen in Echtzeit innerhalb von Zeitlimits
 - Personalisierte Punkteanzeige und Rang-Tracking
@@ -17,6 +18,7 @@ Das 125 Jahre MTG Jubiläum Quiz ist eine serverlose, webbasierte Anwendung, die
 - Vergleich mit führenden Spielern
 
 ## Für Moderatoren
+
 - Steuerung des Fragenablaufs und Timing
 - Live-Überwachung der Teilnehmerantworten
 - Podium-System für ausgewählte Teilnehmer
@@ -28,3 +30,8 @@ Das 125 Jahre MTG Jubiläum Quiz ist eine serverlose, webbasierte Anwendung, die
 - Einfach Skalierbarkeit durch Supabase
 - Echtzeit-Synchronisation aller Clients
 - Mobilgerätefreundliches responsives Design
+
+## Demo
+
+Eine Demo ist auf Youtube zu sehen:
+https://www.youtube.com/watch?v=lhcKT4x3tqo
