@@ -163,21 +163,22 @@ function startGame() {
   console.log("püntklich");
   document.title = "5³ Quiz MTG";
 
-const channel = new BroadcastChannel('tab');
+  // Temporarily disabled for testing multiple accounts
+  /*
+  const channel = new BroadcastChannel('tab');
+  
+  channel.postMessage('sign-in');
 
-channel.postMessage('sign-in');
-// note that listener is added after posting the message
+  channel.addEventListener('message', (msg) => {
+    if (msg.data === 'sign-in') {
+      database.removeAllChannels();
+      window.removeEventListener("beforeunload", beforeUnloadHandler);
+      window.location.href = "";
+    }
+  });
+  */
 
-channel.addEventListener('message', (msg) => {
-  if (msg.data === 'sign-in') {
-    // message received from 2nd tab
-    database.removeAllChannels();
-    window.removeEventListener("beforeunload", beforeUnloadHandler);
-    window.location.href = "";
-  }
-});
-
-window.addEventListener("beforeunload", beforeUnloadHandler);
+  window.addEventListener("beforeunload", beforeUnloadHandler);
 }
 
 
@@ -188,4 +189,4 @@ tb1.addEventListener("keypress", function(event) {
       event.preventDefault();
       submitbutton.click();
     }
-  }); 
+  });
