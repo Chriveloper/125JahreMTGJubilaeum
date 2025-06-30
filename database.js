@@ -1,5 +1,5 @@
-const supaUrl = 'https://pybwkbhycsvhinvpdhki.supabase.co'
-const supaAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB5YndrYmh5Y3N2aGludnBkaGtpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzYyMDAyMjgsImV4cCI6MjA1MTc3NjIyOH0.MeGx-wqXVSfsbJIdaiZ2m-g4Y5EkoA7xHob6n9pOlqM'
+const supaUrl = 'https://vctokkcqfaavwycpeimj.supabase.co'
+const supaAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZjdG9ra2NxZmFhdnd5Y3BlaW1qIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTExOTY2MTQsImV4cCI6MjA2Njc3MjYxNH0.61SiLXCyKSyt0PrfPkPgmV0KceRFaObvMHRlNcJrbKg'
 const database = supabase.createClient(supaUrl, supaAnonKey)
 
 function ifing(conditionType, conditionColumn, conditionValue, query) {

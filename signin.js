@@ -163,8 +163,8 @@ function startGame() {
   console.log("püntklich");
   document.title = "5³ Quiz MTG";
 
-  // Temporarily disabled for testing multiple accounts
-  /*
+  // Denying multiple accounts in the same browser
+  
   const channel = new BroadcastChannel('tab');
   
   channel.postMessage('sign-in');
@@ -176,7 +176,7 @@ function startGame() {
       window.location.href = "";
     }
   });
-  */
+  
 
   window.addEventListener("beforeunload", beforeUnloadHandler);
 }
