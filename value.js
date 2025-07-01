@@ -16,11 +16,14 @@ class Frage {
     }
   }
 
-qtime = 15;
+// Zeit fuer jede Frage
+const qtime = 15;
+
+// Zeit vor jeder Frage (in ms)
 const pretime = 6000;
 
   // Bei welcher Frage das Podium durchgewechselt werden soll
-const nextPodium = [5];
+const nextPodium = [3];
 
 const questions = [
   new Frage("placeholder", "a", "a", "a", "a", "a", 0, ),
