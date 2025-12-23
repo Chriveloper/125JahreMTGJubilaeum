@@ -16,29 +16,44 @@ class Frage {
     }
   }
 
-// Zeit fuer jede Frage
-const qtime = 15;
+// Zeit fuer jede Frage (in s)
+const qtime = 10;
 
 // Zeit vor jeder Frage (in ms)
 const pretime = 6000;
 
-  // Bei welcher Frage das Podium durchgewechselt werden soll
+// Bei welcher Frage das Podium durchgewechselt werden soll
 const nextPodium = [3];
+
+// const questions = [
+//   new Frage("placeholder", "a", "a", "a", "a", "a", 0, ),
+
+
+//   new Frage("Haben Sie schon unsere Festschrift gekauft?", "Ja", "Nein, aber ich kaufe gleich am Ende eine.", "", "", ["a", "b"], qtime, "Ihre erzielten Punkte pro Frage werden nicht nur durch die Schnelligkeit Ihrer Eingabe, sondern auch von Ihrer Antwortserie bestimmt."),
+//   new Frage("Wie viele Fenster hat das Hauptgebäude unserer Schule?", "420", "690", "134", "208", "d", qtime, "Die ersten drei Antwortstasten sind in den Farben des MTG-Logos, die lilane Farbe der letzten Taste ist die Komplementärfarbe zum MTG-Grün."),
+//   new Frage("Seit wann ist das MTG für Mädchen geöffnet?", "1899", "1978", "1990", "1902", "b", qtime, "Es existieren über 440 Versionen des Quiz, bereits ab Version 152 konnte man erstmals Fragen starten und beantworten."),
+//   new Frage("In welchem Jahr wurde das Maria-Theresia-Gymnasium gegründet?", "1965", "1899", "1940", "2006", "a", qtime, "Das Quiz besteht aus 23 Code-Dateien."),
+//   new Frage("Was ist die richtige Reihnfolge der letzten vier Schuldirektoren unserer Schule?", "Fr. Duschka, Hr. Schairer, Fr. Reiter, Hr. Ewerling", "Fr. Duschka, Fr. Reiter, Hr. Schairer, Hr. Ewerling", "Fr. Duschka, Fr. Reiter, Hr. Ewerling, Hr. Schairer", "Fr. Reiter, Hr. Ewerling, Hr. Schairer, Fr. Duschka", "b", qtime, "Beim Programmieren dieses Quiz wurden über 14000 Testnutzer erstellt."),
+//   new Frage("Wie viele Liegestütze schafft Herr Markl?", "55", "21", "86", "125", "c", qtime, "Vor genau 99 Tagen haben Christian und Tilman mit dem Programmieren des Quiz begonnen."),
+//   new Frage('Was war das profitabelste Unternehmen während der letzten Projekttage "Schule als Staat"?', "Museumscafé", "Pizzabäckerei", "Talentshow", "3D-Drucker", "a", qtime, 'Die Länge unseres Codes entspricht etwa 20% von "Harry Potter und der Stein der Weisen"'),
+//   new Frage("Welche Partei gewann die Juniorwahl 2023 am MTG?", "SPD", "Bündnis 90/Die Grünen", "AfD", "CSU", "b", qtime, "Es gibt einen Filter für nicht unangemessene Benutzernamen."),
+//   new Frage("Wie viel Prozent des Schulgebäudes wurden beim Bombentreffer im April 1944 zerstört?", "20%", "0%", "90%", "70%", "d", qtime, 'Es gibt eine Seite, auf der man Nutzer auf die Bühne setzen kann und Nutzer mit anstößigen Namen bannen kann.'),
+//   new Frage("Wie oft besuchte die Namensgeberin Maria Theresia die Schule?", "Nie", "Einmal", "Zweimal", "Dreimal", "b", qtime, false)
+// ];
+
 
 const questions = [
   new Frage("placeholder", "a", "a", "a", "a", "a", 0, ),
 
 
-  new Frage("Haben Sie schon unsere Festschrift gekauft?", "Ja", "Nein, aber ich kaufe gleich am Ende eine.", "", "", ["a", "b"], qtime, "Ihre erzielten Punkte pro Frage werden nicht nur durch die Schnelligkeit Ihrer Eingabe, sondern auch von Ihrer Antwortserie bestimmt."),
-  new Frage("Wie viele Fenster hat das Hauptgebäude unserer Schule?", "420", "690", "134", "208", "d", qtime, "Die ersten drei Antwortstasten sind in den Farben des MTG-Logos, die lilane Farbe der letzten Taste ist die Komplementärfarbe zum MTG-Grün."),
-  new Frage("Seit wann ist das MTG für Mädchen geöffnet?", "1899", "1978", "1990", "1902", "b", qtime, "Es existieren über 440 Versionen des Quiz, bereits ab Version 152 konnte man erstmals Fragen starten und beantworten."),
-  new Frage("In welchem Jahr wurde das Maria-Theresia-Gymnasium gegründet?", "1965", "1899", "1940", "2006", "a", qtime, "Das Quiz besteht aus 23 Code-Dateien."),
-  new Frage("Was ist die richtige Reihnfolge der letzten vier Schuldirektoren unserer Schule?", "Fr. Duschka, Hr. Schairer, Fr. Reiter, Hr. Ewerling", "Fr. Duschka, Fr. Reiter, Hr. Schairer, Hr. Ewerling", "Fr. Duschka, Fr. Reiter, Hr. Ewerling, Hr. Schairer", "Fr. Reiter, Hr. Ewerling, Hr. Schairer, Fr. Duschka", "b", qtime, "Beim Programmieren dieses Quiz wurden über 14000 Testnutzer erstellt."),
-  new Frage("Wie viele Liegestütze schafft Herr Markl?", "55", "21", "86", "125", "c", qtime, "Vor genau 99 Tagen haben Christian und Tilman mit dem Programmieren des Quiz begonnen."),
-  new Frage('Was war das profitabelste Unternehmen während der letzten Projekttage "Schule als Staat"?', "Museumscafé", "Pizzabäckerei", "Talentshow", "3D-Drucker", "a", qtime, 'Die Länge unseres Codes entspricht etwa 20% von "Harry Potter und der Stein der Weisen"'),
-  new Frage("Welche Partei gewann die Juniorwahl 2023 am MTG?", "SPD", "Bündnis 90/Die Grünen", "AfD", "CSU", "b", qtime, "Es gibt einen Filter für nicht unangemessene Benutzernamen."),
-  new Frage("Wie viel Prozent des Schulgebäudes wurden beim Bombentreffer im April 1944 zerstört?", "20%", "0%", "90%", "70%", "d", qtime, 'Es gibt eine Seite, auf der man Nutzer auf die Bühne setzen kann und Nutzer mit anstößigen Namen bannen kann.'),
-  new Frage("Wie oft besuchte die Namensgeberin Maria Theresia die Schule?", "Nie", "Einmal", "Zweimal", "Dreimal", "b", qtime, false)
+  new Frage("Welches Organ produziert Insulin?", "Leber", "Bauchspeicheldrüse", "Niere", "Herz", "b", qtime, "Ihre erzielten Punkte pro Frage werden nicht nur durch die Schnelligkeit Ihrer Eingabe, sondern auch von Ihrer Antwortserie bestimmt."),
+  new Frage("Was ist die Quadratwurzel von 144?", "12", "14", "16", "18", "a", qtime, "Die ersten drei Antwortstasten sind in den Farben des MTG-Logos, die lilane Farbe der letzten Taste ist die Komplementärfarbe zum MTG-Grün."),
+  new Frage("Wer hat 'Faust' geschrieben?", "Friedrich Schiller", "Thomas Mann", "Johann Wolfgang von Goethe", "Bertolt Brecht", "c", qtime, "Es existieren über 440 Versionen des Quiz, bereits ab Version 152 konnte man erstmals Fragen starten und beantworten."),
+  new Frage("Was ist der Sinus von 90 Grad?", "0", "1", "-1", "2", "b", qtime, "Beim Programmieren dieses Quiz wurden über 14000 Testnutzer erstellt."),
+  new Frage("Welcher ist der größte Kontinent der Erde?", "Asien", "Afrika", "Amerika", "Europa", "a", qtime, "Vor genau 99 Tagen haben Christian und Tilman mit dem Programmieren des Quiz begonnen."),
+  new Frage("Welches der folgenden Bauten ist keines der sieben Weltwunder der Antike?", "Pyramiden von Gizeh", "Freiheitsstatue", "Koloss von Rhodos", "Zeusstatue", "b", qtime, 'Die Länge unseres Codes entspricht etwa 20% von "Harry Potter und der Stein der Weisen"'),
+  new Frage("Wer hat die Mona Lisa gemalt?", "Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Claude Monet", "c", qtime, "Es gibt einen Filter für nicht unangemessene Benutzernamen."),
+  new Frage("Was ist die Hauptstadt von Australien?", "Sydney", "Melbourne", "Canberra", "Neuseeland", "c", qtime, false)
 ];
 
 
@@ -131,13 +146,8 @@ const ranglistenlimit = 5;
 
 
 
-
-
-
-// Wär die Mitte
+// Wäre die Mitte
 //const nextPodium = (questions.length - 1)/2;
-
-
 
   
 async function getQuestions() {
